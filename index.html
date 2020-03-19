@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>FormWizard_v8</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+       
+		<div class="wrapper">
+
+            <div class="top">
+
+                <div class="addresstop">
+        <span class="bigger">Registred Company</span><br>
+        <span>"Existing Company Registration"</span><br>
+        <span>"First Last"</span><br>
+        <span>"Address 1"</span><br>
+        <span>"Address 2"</span><br>
+        <span>"City State/Region Postal Code"</span>
+                </div>
+                
+                <div class="bodyarr">
+                 <a href="#previous" role="menuitem"><img src="images/cancel.jpg" alt=""></a>
+                </div>
+                </div>
+                <div class="body1">
+                    <div class="firsth">
+                        <h3>Tell Us About Your Company</h3>
+                        <p>Complete all fields and go to the next step</p>
+                    </div>
+                    <div class="secondh">
+                        <h3>Tell Us About Your Customers</h3>
+                        <p>Complete all fields and go to the next step</p>
+                    </div>
+                    <div class="thirdh">
+                        <h3>Nearly There</h3>
+                        <p>Complete all fields and go to the next step</p>
+                    </div>
+                    <div class="forthh">
+                        <h3>Last Page!</h3>
+                        <p>Complete all fields and go to the next step</p>
+                    </div>
+                    <div class="fifthh">
+                        <h3>Thank You</h3>
+                        <p>We'll be in touch shortly to get you setup</p>
+                    </div>
+                </div>
+                <img src="images/Line7.jpg" alt="" class="linemainstart">
+                <img src="images/Line7.jpg" alt="" class="linemainend">
+            <form action="" id="wizard">
+             
+        		<!-- SECTION 1 -->
+               <h4></h4>
+                <section>
+                    <div class="content1">
+                        <p class="basics">The Basics</p>
+                        <div class="first displ">
+                        <label for="supply">What industry do you supply?</label>
+                        <select name="Select" id="supply">
+                            <option value="gen">Select...</option>
+                            <option value="fisrtopt">First</option>
+                            <option value="secondopt">Second</option>
+                        </select>
+                    </div>
+                    <div class="second displ">
+                        <div class="addline">Are you looking to add top line revenue with</div>
+                        <div class="radio">
+                        <label for="convenience">Customer Convenience</label>
+                        <label for="revenue">Top Line Revenue</label>
+                        <input type="radio" id="convenience" name="radiobtns" value="">
+                        <input type="radio" id="revenue" name="radiobtns" value="" checked>
+                    </div>
+                    </div>
+                    <div class="third displ">
+                        <label for="overallcustomers">How many customers do you have overall?</label>
+                        <input type="text" id="overallcustomers">
+                    </div>
+                    <div class="forth displ">
+                        <label for="typical">What is the typical scraping use case?</label>
+                        <input type="text" id="typical">
+                    </div>
+                    <div class="fifth displ">
+                        <label for="metalsell">Do you sell metal scrapets now?</label>
+                        <div class="radiometal">
+                        <input type="radio" id="metalsellyes" name="metalbtn" value="">
+                        <label for="metalsellyes">Yes</label>
+                        <input type="radio" id="metalsellno" name="metalbtn" value="" checked>
+                        <label for="metalsellno">No</label>
+                    </div>
+                    </div>
+                    <div class="sixth displ">
+                        <label for="regularpurchasemetal">If Yes, how many of your customers purchase them regulary now?</label>
+                        <input type="text" id="regularpurchasemetal">
+                    </div> 
+                    <div class="seventh displ">
+                        <label for="plasticsell">Do you sell plastic scrapets now?</label>
+                        <div class="radioplastic">
+                        <input type="radio" id="plasticsellyes" name="plasticbtn" value="">
+                        <label for="plasticsellyes">Yes</label>
+                        <input type="radio" id="plasticsellno" name="plasticbtn" value="" checked>
+                        <label for="plasticsellno">No</label>
+                    </div>
+                    </div>
+                    <div class="eighth displ">
+                        <label for="regularpurchaseplastic">If Yes, how many of your customers purchase them regulary now?</label>
+                        <input type="text" id="regularpurchaseplastic">
+                    </div>
+                    <div class="nineth displ">
+                        <label for="purchaseplastic">How many of your customers in total could be purchasing plastic scrapers now for various use</label>
+                        <input type="text" id="purchaseplastic">
+                    </div>
+            
+                    <div class="tenth displ">
+                        <label for="buyin90">How many of your customers could buy in 90 days?</label>
+                        <input type="text" id="buyin90">
+                    </div>
+                    <div class="eleventh displ">
+                        <label for="buyin12">How many of your customers could buy within 12 months?</label>
+                        <input type="text" id="buyin12">
+                    </div>
+                    </div>
+</section>
+				<!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                    <div class="content2">
+<p class="habits">Customers Buying Habits</p>
+                      
+                        <div class="habit1 displ">
+                            <label for="typical">Typical ordering cycle (ex. if customer order once)</label>
+                            <div class="inpp">
+                                <input id="typical" type="text">
+                                <span>DAYS</span>
+                            </div> 
+                        
+                        </div> 
+                        <div class="habit2 displ">
+                            <label for="spc">How much does each customer spend each time</label>
+                            <div class="inpp">
+                                <input id="spc" type="text">
+                                <select name="" id="">
+                                    <option value=""></option> 
+                                    <option value=""></option>
+                                </select>
+                     
+                                <span>CUR</span>
+                            </div> 
+                        
+                        </div>
+                        <div class="habit3 displ">
+                            <label for="som">How much do they typically spend on metal</label>
+                            <div class="inpp">
+                                <input id="som" type="text">
+                                <input id="som1" type="text" placeholder="autofill">
+                                <span>CUR</span>
+                            </div> 
+                        </div>
+                        <div class="habit4 displ">
+                            <label for="anticipate">How much would you anticipate your customer to</label>
+                            <div class="inpp">
+                                <input id="anticipate" type="text">
+                                <input id="anticipate1" type="text" placeholder="autofill">
+                                <span>CUR</span>
+                            </div> 
+                        </div>
+                    </div>
+                	
+                </section>
+
+                <!-- SECTION 3 -->
+                <h4></h4>
+                <section>
+                    <div class="content3">
+                            <div class="model">Your Business Model</div>
+                            <div class="model1 displ">
+                                <label for="numofloc">Number of locations</label>
+                                    <input id="numofloc" type="text">
+                            </div>
+                            <div class="model2 displ">
+                                <label for="salestores">Amout of sales to resellers (percent)</label>
+                            <div class="inpp">
+                                <input id="salestores" type="text">
+                                <span>%</span>
+                            </div> 
+                    </div>
+                    <div class="model3 displ">
+                        <label for="salestouser">Amout of sales to end users (percent)</label>
+                    <div class="inpp">
+                        <input id="salestouser" type="text">
+                        <span>%</span>
+                    </div> 
+            </div>
+            <div class="model4 displ">
+                <label for="targetmark">Target markup (percent)</label>
+            <div class="inpp">
+                <input id="targetmark" type="text">
+                <span>%</span>
+            </div> 
+    </div>
+    <div class="model5 displ">
+        <label for="metalsell">Do you stock the product you sell?</label>
+        <div class="stocksell">
+        <input type="radio" id="stocksellyes" name="metalbtn" value="">
+        <label for="stocksellyes">Yes</label>
+        <input type="radio" id="stocksellno" name="metalbtn" value="" checked>
+        <label for="stocksellno">No</label>
+    </div>
+    </div>
+            </div>
+                </section>
+
+                <!-- SECTION 4 -->
+                <h4></h4>
+                <section>
+                   <div class="content4">
+                       <div class="market">Go To Market Strategy</div>
+                <div class="market1 displ">
+                        <label for="salesforce">Do you have an outside sales force?</label>
+                        <div class="radioplastic">
+                        <input type="radio" id="salesforceyes" name="outsidesales" value="">
+                        <label for="salesforceyes">Yes</label>
+                        <input type="radio" id="salesforceno" name="outsidesales" value="" checked>
+                        <label for="salesforceno">No</label>
+                    </div>
+                    </div>
+                    <div class="market2 displ">
+                        <label for="sellonline">Do you sell online?</label>
+                        <div class="salesonline">
+                        <input type="radio" id="onlineyes" name="onlinesale" value="">
+                        <label for="onlineyes">Yes</label>
+                        <input type="radio" id="onlineno" name="onlinesale" value="" checked>
+                        <label for="onlineno">No</label>
+                    </div>
+                    </div>
+                    <div class="market3 displ">
+                        <label for="walklocation">Do you have a walk-in location?</label>
+                        <div class="walk-in">
+                        <input type="radio" id="walkinyes" name="walkinlocation" value="">
+                        <label for="walkinyes">Yes</label>
+                        <input type="radio" id="walkinno" name="walkinlocation" value="" checked>
+                        <label for="walkinno">No</label>
+                    </div>
+                    </div>
+                    <div class="market4 displ">
+                        <label for="routine">Routine scheduled delivery?</label>
+                        <div class="scheduleddelivery">
+                        <input type="radio" id="schdeliveryyes" name="scdel" value="">
+                        <label for="schdeliveryyes">Yes</label>
+                        <input type="radio" id="schdeliveryno" name="scdel" value="" checked>
+                        <label for="schdeliveryno">No</label>
+                    </div>
+                    </div>
+                    <div class="market5 displ">
+                        <label for="dropshipforyou">Do you expect your suppliers to drop ship for your</label>
+                        <div class="dropship">
+                        <input type="radio" id="dropyes" name="dropshipsupp" value="">
+                        <label for="dropyes">Yes</label>
+                        <input type="radio" id="dropno" name="dropshipsupp" value="" checked>
+                        <label for="dropno">No</label>
+                    </div>
+                    </div>
+                    <div class="market6 displ">
+                        <label for="couriers">Do you ship using a common courier like FedEx, UPS, USPS,</label>
+                        <div class="usecourier">
+                        <input type="radio" id="courieryes" name="comcour" value="">
+                        <label for="courieryes">Yes</label>
+                        <input type="radio" id="courierno" name="comcour" value="" checked>
+                        <label for="courierno">No</label>
+                    </div>
+                    </div>
+                   </div>
+                    </section>
+                    
+                   
+                <div class="thankspage">  <img src="images/scr.jpg" alt="">
+                </div>
+                   
+            </form>
+		</div>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+
+		<script src="js/main.js"></script>
+
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
