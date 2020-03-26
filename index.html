@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-       
+        
 		<div class="wrapper">
 
             <div class="top">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <img src="images/Line7.jpg" alt="" class="linemainstart">
-                <img src="images/Line7.jpg" alt="" class="linemainend">
+                <!-- <img src="images/Line7.jpg" alt="" class="linemainend"> -->
             <form action="" id="wizard">
              
         		<!-- SECTION 1 -->
@@ -146,13 +146,16 @@
                         </div> 
                         <div class="habit2 displ">
                             <label for="spc">How much does each customer spend each time</label>
-                            <div class="inpp">
+                            <div class="inpp innp2">
                                 <input id="spc" type="text">
-                                <select name="" id="">
-                                    <option value=""></option> 
-                                    <option value=""></option>
+                                <div class="select">
+                                <select name="" id="currency">
+                                    <option  class="arrowdrop" value=""></option> 
+                                    <option value="">$</option> 
+                                    <option value="">&#x20AC;</option>
+                                    
                                 </select>
-                     
+                            </div>
                                 <span>CUR</span>
                             </div> 
                         
@@ -190,21 +193,21 @@
                                 <label for="salestores">Amout of sales to resellers (percent)</label>
                             <div class="inpp">
                                 <input id="salestores" type="text">
-                                <span>%</span>
+                                <span class="percent" >%</span>
                             </div> 
                     </div>
                     <div class="model3 displ">
                         <label for="salestouser">Amout of sales to end users (percent)</label>
                     <div class="inpp">
                         <input id="salestouser" type="text">
-                        <span>%</span>
+                        <span class="percent">%</span>
                     </div> 
             </div>
             <div class="model4 displ">
                 <label for="targetmark">Target markup (percent)</label>
             <div class="inpp">
                 <input id="targetmark" type="text">
-                <span>%</span>
+                <span class="percent">%</span>
             </div> 
     </div>
     <div class="model5 displ">
